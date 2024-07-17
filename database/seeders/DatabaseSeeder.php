@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Student;
 use App\Models\User;
+use App\Models\SubjectGrade;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -14,15 +16,13 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // User::factory(10)->create();
+        // Student::factory()->count(30)->create();
 
-<<<<<<< HEAD
-        Student::factory()->count(30)->create();
+        SubjectGrade::factory()->count(50)->create();
 
-=======
->>>>>>> b72506c860d6f1e2e2f2aa6bb99086ef4e040a8c
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        // User::factory()->create([
+        //     'name' => 'Test User',
+        //     'email' => 'test@example.com',
+        // ]);
     }
 }
