@@ -2,10 +2,6 @@
 
 namespace Database\Seeders;
 
-<<<<<<< HEAD
-use App\Models\Student;
-=======
->>>>>>> b72506c860d6f1e2e2f2aa6bb99086ef4e040a8c
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
