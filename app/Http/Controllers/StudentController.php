@@ -13,7 +13,10 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return Student::all();
+        $data['students'] = Student::all();
+        return view('students.index',$data);
+
+        //return Student::all();
         //return Student::where('province', 'Texas')->get();
 
         // return Student::where('province', 'New Jersey')
@@ -50,7 +53,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        //
+        return view('students.create');
     }
 
     /**
@@ -67,7 +70,7 @@ class StudentController extends Controller
         $student->city      =$request['city'];
         $student->province  =$request['province'];
         $student->zip       =$request['zip'];
-        $student->birthdate =$request['birthdate'];
+        $student->birthdate =$request['birthday'];
         $student->save();
 
     }
